@@ -1,0 +1,39 @@
+{
+  "name": "genpark-deep-research-evidence-synthesis-graph-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Deep research evidence synthesis graph decomposing complex queries into multi-agent web investigations and verified citation trees.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "deep-research",
+  "tags": [
+    "deep-research",
+    "evidence-graph",
+    "mindsearch",
+    "perplexity-pages",
+    "citation-synthesizer"
+  ],
+  "inputs": {
+    "research_topic": {
+      "type": "string"
+    },
+    "max_search_subqueries": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "research_graph_id": {
+      "type": "string"
+    },
+    "synthesized_report_title": {
+      "type": "string"
+    },
+    "evidence_nodes_count": {
+      "type": "integer"
+    },
+    "executive_summary_markdown_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
